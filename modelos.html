@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Modelos</title>
+<!-- Bootstrap minified CSS -->
+        <link rel="stylesheet"
+            href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        <!-- Personal Styles -->
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script
+        src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- Highcharts JavaScript -->
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+        <!-- Graphic Draw JavaScript -->
+        <!--<link rel="stylesheet" href="../css/index.css"/>    -->
+        
+
+        <style>
+            img{
+                width: 200px;
+                border-radius: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            
+            }
+            .subtítulo{
+                font-weight: bold;
+            }
+            .img2{
+                width: 500px;
+                border-radius:20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+                .cripto-text {
+                    text-align: center;
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                }
+                body{
+                    background-color:rgb(255, 193, 246);
+                }
+        </style>
+       
+    </head>
+    
+    <body>
+       <div class="container">
+        
+            <nav class="navbar navbar-default">
+               
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Introdução</a></li>
+                        <li><a href="conteudossinteticos.html">Fundamentos dos conteúdos sintéticos</a></li>
+                        <li><a href="modelos.html">Modelos Avançados de IA e criação de Deepfakes</a></li>
+                        <li><a href=riscos.html>Riscos e Impactos na confiança digital</a></li>
+                        <li><a href="conclusao.html">Conclusão</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="about.html" target="_blank">
+                            <span class="glyphicon glyphicon-user"></span> About </a> 
+                        </li>
+                    </ul>
+                    
+                </div>
+            </nav>
+
+<div class="ia-text">
+    <h1 style="font-size:50px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Técnicas Avançadas de Criação de Deepfakes</h1>
+</div>
+<br>
+<br>
+<br>
+
+<div class="subtítulo" style="font-size: 20px; text-align: left;">
+  <strong><p>3.1 Modelos avançados para vídeo e imagem</p></strong>
+</div>
+
+<div class="texto" style="text-align: left;">
+  <p>
+    Para além dos métodos falados anteriormente, existem técnicas mais avançadas na criação de deepfakes, provenientes da evolução dos <i>Diffusion Models</i> 
+    e dos Modelos Autoregressivos. Estes modelos de última geração permitem a criação de deepfakes mais sofisticados e convincentes. Aqui vão alguns exemplos:
+  </p>
+
+  <ul>
+    <li>
+      <strong><i>Stable Diffusion:</i></strong> O Stable Diffusion é um diffusion model projetado para transformar descrições textuais (<i>prompts</i>) em imagens realistas. 
+      Em vez de operar diretamente no espaço de pixels de alta dimensão, ele trabalha num “espaço latente” comprimido: primeiro a imagem é codificada através das VAEs, 
+      tornando a representação mais simples; depois, o modelo de difusão aplica um sinal aleatório nessa representação e aprende a reverter esse sinal passo a passo, 
+      através de <i>U-Net</i>, gerando uma nova imagem coerente e detalhada a partir do <i>prompt</i>.
+    </li>
+    <br>
+    <li>
+      <strong><i>ControlNet:</i></strong> ControlNet é uma extensão para o Stable Diffusion ou para outros modelos de difusão, que adiciona nuances 
+      extras à geração — isto é, permite guiar de forma mais precisa a estrutura, pose, silhueta, profundidade ou contornos da imagem gerada. 
+      Enquanto o <i>Stable Diffusion</i> “liberta” o modelo para criar a partir de texto, o <i>ControlNet</i> informa a IA como a imagem deve ser gerada.
+    </li>
+    <br>
+    <li>
+      <strong><i>Diffusion Transformers (DiTs):</i></strong> Os DiTs são uma evolução recente dos modelos de difusão: combinam a lógica 
+      de difusão (VAEs) com a arquitetura baseada em transformers em vez da tradicional rede convolucional (<i>U-Net</i>). 
+      O processo de codificação é o mesmo que nos Stable Diffusers, porém a representação mais simples é processada por blocos de transformer, 
+      que substituem a U-Net e aprendem a remover o sinal. No final, o VAE descodifica a representação em pixels, gerando a imagem final com alta fidelidade.
+    </li>
+  </ul>
+</div>
+<br>
+<br>
+
+<div class="subtítulo" style="text-align:left; font-size: 20px;">
+  <strong><p>3.2 Modelos de clonagem de voz</p></strong>
+</div>
+
+<div class="texto" style="text-align: left;">
+  <ul>
+    <li>
+      <strong><i>Text to Speech (TTS):</i></strong> O TTS é uma tecnologia que converte texto escrito numa interface digital em áudio com voz natural. 
+      O funcionamento envolve duas etapas: o processamento do texto de entrada, interpretando palavras, pontuação e estrutura, 
+      importantes para determinar pronúncias e ritmo; com base nesta análise, gera-se uma representação audio-temporal, convertida numa 
+      onda sonora reproduzida pelo computador através de um vocoder. Esta tecnologia utiliza muitas vezes modelos autoregressivos.
+    </li>
+    <br>
+    <li>
+      <strong><i>Voice Conversion (VC):</i></strong> A VC é uma técnica que permite transformar a voz d
+      e uma pessoa para soar como a de outra, preservando conteúdo falado, entoação e estilo de voz original. 
+      Ela usa o processo de <i>Voice Cloning</i>, onde, ao coletar amostras de áudio do locutor alvo, a IA analisa e extrai suas características. 
+      Ao fornecer uma gravação de voz ou texto, o modelo reescreve o conteúdo utilizando a voz alvo. Esta tecnologia utiliza <i>GANs</i>, Autoencoders ou diffusion models.
+    </li>
+  </ul>
+</div>
+<br>
+<br>
+
+<div class="subtítulo" style="text-align:left; font-size: 20px;">
+  <strong><p>3.3 Modelos Multimodais</p></strong>
+</div>
+
+<div class="texto" style="text-align: left;">
+  <p>
+    Os modelos multimodais são versões muito mais avançadas dos Diffusion Models, que lidam com mais do que uma tipologia de dado em simultâneo. 
+    Estes modelos utilizam codificadores específicos para cada modalidade, que transformam texto, imagem ou som em representações internas. 
+    Depois, essas representações são combinadas num espaço multimodal comum, permitindo ao sistema interpretar contexto e significado de forma unificada.
+  
+    Modelos modernos de geração de vídeo, como <strong>Sora (OpenAI)</strong>, <strong>Runway Gen-2</strong> e <strong>Pika</strong>, 
+    utilizam arquiteturas multimodais e técnicas de difusão para transformar texto, imagem ou vídeo em sequências visuais realistas. 
+    O Sora e o Runway Gen-2 combinam geração e edição multimodal de forma prática, enquanto o Pika foca-se em animações rápidas e estilizadas.
+  </p>
+</div>
+            
+        </div>
+    </body>
+</html>

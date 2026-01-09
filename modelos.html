@@ -2,7 +2,7 @@
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
-        <title>Modelos</title>
+        <title>Modelos Avançados de IA e criação de Deepfakes</title>
 <!-- Bootstrap minified CSS -->
         <link rel="stylesheet"
             href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -22,26 +22,14 @@
         
 
         <style>
-            img{
-                width: 200px;
-                border-radius: 20px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
+      
             
-            }
+          
             .subtítulo{
                 font-weight: bold;
             }
-            .img2{
-                width: 500px;
-                border-radius:20px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
 
-                .cripto-text {
+                .ia-text {
                     text-align: center;
                     position: absolute;
                     top: 30%;
@@ -81,7 +69,7 @@
             </nav>
 
 <div class="ia-text">
-    <h1 style="font-size:50px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Técnicas Avançadas de Criação de Deepfakes</h1>
+    <h1 style="font-size:50px; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;">Modelos Avançados de IA e criação de Deepfakes</h1>
 </div>
 <br>
 <br>
@@ -106,7 +94,7 @@
     </li>
     <br>
     <li>
-      <strong><i>ControlNet:</i></strong> ControlNet é uma extensão para o Stable Diffusion ou para outros modelos de difusão, que adiciona nuances 
+      <strong><i>ControlNet:</i></strong> <i>ControlNet</i> é uma extensão para o <i>Stable Diffusion</i> ou para outros modelos de difusão, que adiciona nuances 
       extras à geração — isto é, permite guiar de forma mais precisa a estrutura, pose, silhueta, profundidade ou contornos da imagem gerada. 
       Enquanto o <i>Stable Diffusion</i> “liberta” o modelo para criar a partir de texto, o <i>ControlNet</i> informa a IA como a imagem deve ser gerada.
     </li>
@@ -135,11 +123,22 @@
       onda sonora reproduzida pelo computador através de um vocoder. Esta tecnologia utiliza muitas vezes modelos autoregressivos.
     </li>
     <br>
+
+
+    <div style="text-align: center;">
+      <img src="imagens/ttsimagem.png" alt="Descrição da imagem" style="width:500px; border:2px solid black;">
+      <figcaption style="font-size: 10px;"> Figura 5: Diagrama do funcionamento da tecnologia TTS. </figcaption>
+    </div>
+
+
+
+    <br>
     <li>
       <strong><i>Voice Conversion (VC):</i></strong> A VC é uma técnica que permite transformar a voz d
       e uma pessoa para soar como a de outra, preservando conteúdo falado, entoação e estilo de voz original. 
       Ela usa o processo de <i>Voice Cloning</i>, onde, ao coletar amostras de áudio do locutor alvo, a IA analisa e extrai suas características. 
-      Ao fornecer uma gravação de voz ou texto, o modelo reescreve o conteúdo utilizando a voz alvo. Esta tecnologia utiliza <i>GANs</i>, Autoencoders ou diffusion models.
+      Ao fornecer uma gravação de voz ou texto, o modelo reescreve o conteúdo utilizando a voz alvo. Esta tecnologia utiliza <i>GANs</i>, <i>Autoencoders</i> ou 
+      <i>diffusion models</i>.
     </li>
   </ul>
 </div>
@@ -152,7 +151,7 @@
 
 <div class="texto" style="text-align: left;">
   <p>
-    Os modelos multimodais são versões muito mais avançadas dos Diffusion Models, que lidam com mais do que uma tipologia de dado em simultâneo. 
+    Os modelos multimodais são versões muito mais avançadas dos <i>Diffusion Models</i>, que lidam com mais do que uma tipologia de dado em simultâneo. 
     Estes modelos utilizam codificadores específicos para cada modalidade, que transformam texto, imagem ou som em representações internas. 
     Depois, essas representações são combinadas num espaço multimodal comum, permitindo ao sistema interpretar contexto e significado de forma unificada.
   
@@ -163,5 +162,12 @@
 </div>
             
         </div>
+
+
+      <div style="text-align: center;">
+      <img src="imagens/multimodais.png" alt="Descrição da imagem" style="width:500px; border:2px solid black;">
+      <figcaption style="font-size: 10px;"> Figura 6: Diferença dos modelos multimodais em relação aos outros </figcaption>
+    </div>
+      
     </body>
 </html>
